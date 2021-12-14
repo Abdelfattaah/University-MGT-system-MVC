@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFD38249-5D9E-4646-B4C0-6DD7B55DED6E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>uni1</RootNamespace>
+    <AssemblyName>uni1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Hardcodet.Wpf.TaskbarNotification, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Hardcodet.NotifyIcon.Wpf.1.0.5\lib\net451\Hardcodet.Wpf.TaskbarNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.18.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBook_Cont.cs" />
+    <Compile Include="AddBus_Cont.cs" />
+    <Compile Include="application.cs" />
+    <Compile Include="AtendanceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtendanceForm.Designer.cs">
+      <DependentUpon>AtendanceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvailapleRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailapleRoom.Designer.cs">
+      <DependentUpon>AvailapleRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Borrow Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Borrow Book.Designer.cs">
+      <DependentUpon>Borrow Book.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrowBook_Cont.cs" />
+    <Compile Include="bus sub.cs" />
+    <Compile Include="Bus Subscrebtion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bus Subscrebtion.Designer.cs">
+      <DependentUpon>Bus Subscrebtion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BUss1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BUss1.Designer.cs">
+      <DependentUpon>BUss1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Busses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Busses.Designer.cs">
+      <DependentUpon>Busses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheek bus studentcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheek bus studentcs.Designer.cs">
+      <DependentUpon>Cheek bus studentcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CHek bus subscribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CHek bus subscribe.Designer.cs">
+      <DependentUpon>CHek bus subscribe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chek_Bus.cs" />
+    <Compile Include="Class2.cs" />
+    <Compile Include="ClassCancel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassCancel.Designer.cs">
+      <DependentUpon>ClassCancel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cnt1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cnt1.Designer.cs">
+      <DependentUpon>cnt1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact Information.Designer.cs">
+      <DependentUpon>Contact Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateSch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateSch.Designer.cs">
+      <DependentUpon>CreateSch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit and deleat buscs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit and deleat buscs.Designer.cs">
+      <DependentUpon>Edit and deleat buscs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_del_bus.cs" />
+    <Compile Include="emplis.cs" />
+    <Compile Include="employee.cs" />
+    <Compile Include="Employee_Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_Form1.Designer.cs">
+      <DependentUpon>Employee_Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eng.cs" />
+    <Compile Include="EnglishTest2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnglishTest2.Designer.cs">
+      <DependentUpon>EnglishTest2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnglishTest1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnglishTest1.Designer.cs">
+      <DependentUpon>EnglishTest1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="help.cs" />
+    <Compile Include="hightschool.cs" />
+    <Compile Include="login.cs" />
+    <Compile Include="menuAttendancecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuAttendancecs.Designer.cs">
+      <DependentUpon>menuAttendancecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_atendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_atendance.Designer.cs">
+      <DependentUpon>menu_atendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registered Successfully.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registered Successfully.Designer.cs">
+      <DependentUpon>Registered Successfully.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBookcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBookcs.Designer.cs">
+      <DependentUpon>ReturnBookcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReturnBook_Cont.cs" />
+    <Compile Include="StaffList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffList.Designer.cs">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student High School Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student High School Information.Designer.cs">
+      <DependentUpon>Student High School Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student list.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student list.Designer.cs">
+      <DependentUpon>Student list.cs</DependentUpon>
+    </Compile>
+    <Compile Include="susses.cs" />
+    <Compile Include="Swap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Swap.Designer.cs">
+      <DependentUpon>Swap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="swapTo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="swapTo.Designer.cs">
+      <DependentUpon>swapTo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VeiwBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeiwBook.Designer.cs">
+      <DependentUpon>VeiwBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBook_Cont.cs" />
+    <Compile Include="ِApplication Formcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ِApplication Formcs.Designer.cs">
+      <DependentUpon>ِApplication Formcs.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AtendanceForm.resx">
+      <DependentUpon>AtendanceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvailapleRoom.resx">
+      <DependentUpon>AvailapleRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Borrow Book.resx">
+      <DependentUpon>Borrow Book.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bus Subscrebtion.resx">
+      <DependentUpon>Bus Subscrebtion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BUss1.resx">
+      <DependentUpon>BUss1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Busses.resx">
+      <DependentUpon>Busses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheek bus studentcs.resx">
+      <DependentUpon>Cheek bus studentcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CHek bus subscribe.resx">
+      <DependentUpon>CHek bus subscribe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassCancel.resx">
+      <DependentUpon>ClassCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cnt1.resx">
+      <DependentUpon>cnt1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact Information.resx">
+      <DependentUpon>Contact Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateSch.resx">
+      <DependentUpon>CreateSch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit and deleat buscs.resx">
+      <DependentUpon>Edit and deleat buscs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_Form1.resx">
+      <DependentUpon>Employee_Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnglishTest2.resx">
+      <DependentUpon>EnglishTest2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnglishTest1.resx">
+      <DependentUpon>EnglishTest1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuAttendancecs.resx">
+      <DependentUpon>menuAttendancecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_atendance.resx">
+      <DependentUpon>menu_atendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registered Successfully.resx">
+      <DependentUpon>Registered Successfully.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBookcs.resx">
+      <DependentUpon>ReturnBookcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffList.resx">
+      <DependentUpon>StaffList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student High School Information.resx">
+      <DependentUpon>Student High School Information.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student list.resx">
+      <DependentUpon>Student list.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Swap.resx">
+      <DependentUpon>Swap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="swapTo.resx">
+      <DependentUpon>swapTo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeiwBook.resx">
+      <DependentUpon>VeiwBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ِApplication Formcs.resx">
+      <DependentUpon>ِApplication Formcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\useer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookreturn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookborrower300px.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Los_angeles_charter_bus_%28323-373-3085_%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eng.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mob.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mob1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
